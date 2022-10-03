@@ -52,7 +52,7 @@ public class BaseballGameService {
         return false;
     }
 
-    private int getBallCount(StrikeBalls strikeBalls, Pitches pitches) {
+    public int getBallCount(StrikeBalls strikeBalls, Pitches pitches) {
         int count = 0;
         for (int i = 0; i < Pitches.NUM_BALL_LEN; i++) {
             count += isBallAt(strikeBalls, pitches, i) ? 1 : 0;

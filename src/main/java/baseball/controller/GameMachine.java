@@ -23,6 +23,11 @@ public class GameMachine {
     }
 
     public void validateUserInput(String gameReplayButton) {
+        if (gameReplayButton.length() != 1) {
+            System.out.println("게임 버튼 길이 오류");
+            throw new IllegalArgumentException();
+        }
+
         if (!gameReplayButton.matches(gameButtonPattern)) {
             System.out.println("게임 버튼 값 오류");
             throw new IllegalArgumentException();

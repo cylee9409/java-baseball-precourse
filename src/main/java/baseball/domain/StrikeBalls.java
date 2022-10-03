@@ -4,11 +4,7 @@ import camp.nextstep.edu.missionutils.Randoms;
 
 import java.util.ArrayList;
 
-public class StrikeBalls {
-
-    public static final int NUM_BALL_LEN = 3;
-    public static final int MIN_BALL_VAL = 1;
-    public static final int MAX_BALL_VAL = 9;
+public class StrikeBalls extends Baseball {
 
     ArrayList<Integer> strikeBalls;
 

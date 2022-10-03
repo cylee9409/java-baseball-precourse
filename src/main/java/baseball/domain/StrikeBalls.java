@@ -30,4 +30,11 @@ public class StrikeBalls extends Baseball {
         return strikeBalls.get(index);
     }
 
+    public boolean contains (int num) {
+        if (strikeBalls.contains(num)) {
+            return true;
+        }
+        return false;
+    }
+
 }

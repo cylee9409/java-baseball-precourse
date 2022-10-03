@@ -10,9 +10,17 @@ import static org.assertj.core.api.Assertions.*;
 
 class PitchesTest extends NsTest {
     @Test
-    void 사용자_입력값_길이_예외_테스트() {
+    void 사용자_입력값_길이_초과_시_예외_테스트() {
         assertThatIllegalArgumentException().isThrownBy(() -> {
             new Pitches("1234");
+        });
+
+    }
+
+    @Test
+    void 사용자_입력값_길이_미만_시_예외_테스트() {
+        assertThatIllegalArgumentException().isThrownBy(() -> {
+            new Pitches("1");
         });
 
     }
